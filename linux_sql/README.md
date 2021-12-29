@@ -161,11 +161,10 @@ Table Schemas:
 | `disk_io`   | INT, NOT NULL| Contains information about a computers total memory      |
 | `disk_available`   | INT, NOT NULL      | Contains information about the amount of space available on disk, in KB     |
 
-# Test
+# Testing
 Bash scripts and SQL queries that were tested manually through the command-line interface and using DBeaver, a real-time GUI interface for databases. The testing proved successful when DBeaver showed multiple inserted rows after leaving the host machine on for an hour, upon refresh. Also entries were created only whilst the Docker container is running.
 
 # Deployment
-
 This app is deployed to this very GitHub repository. A Docker image with PSQL was provisioned via DockerHub. A jarvis remote desktop running CentOS 7 was used for testing and deployment.
 
 # Improvements
