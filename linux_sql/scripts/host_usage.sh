@@ -39,7 +39,10 @@ disk_available=$(echo "$df_stat" | awk 'NR == 2 {print substr($4,1,length($4)-1)
 host_id="(SELECT id FROM host_info WHERE hostname='$hostname')";
 
 # Insert data into table, host_usage using data below
-insert_data="INSERT INTO host_usage (timestamp, host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available) VALUES ('$timestamp', $host_id, $memory_free, '$cpu_idle', '$cpu_kernel', $disk_io ,$disk_available)"
+insert_data="INSERT INTO host_usage (timestamp, host_id, memory_free, cpu_idle,
+cpu_kernel, disk_io, disk_available) VALUES ('$timestamp', $host_id,
+$memory_free, '$cpu_idle', '$cpu_kernel', $disk_io ,$disk_available)"
+
 export PGPASSWORD=$psql_password
 #Insert data into a database, using psql instance
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_data"

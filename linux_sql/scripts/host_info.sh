@@ -31,8 +31,13 @@ total_mem=$(echo "$mem_info_out"  | egrep "MemTotal:" | awk '{print $2}' | xargs
 timestamp=$(echo "$vmstat_info" | awk 'NR == 3 {print $18 " "$19}' | xargs)
 
 # Insert data into table, host_info using data below
-insert_data="INSERT INTO host_info (hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, timestamp) VALUES ('$hostname', $cpu_number, '$cpu_architecture', '$cpu_model', $cpu_mhz, $l2_cache, $total_mem, '$timestamp')"
+insert_data="INSERT INTO host_info (hostname,
+cpu_number, cpu_architecture, cpu_model
+, L2_cache, total_mem, timestamp) VALUES
+('$hostname', $cpu_number, '$cpu_architecture',
+'$cpu_model', $cpu_mhz, $l2_cache, $total_mem, '$timestamp')"
+
 export PGPASSWORD=$psql_password
 #Insert data into a database, using psql instance
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_data"
-exit 0
+exit $?
