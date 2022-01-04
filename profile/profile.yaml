@@ -5,7 +5,7 @@ github_repo_root_url: "https://github.com/jarviscanada/jarvis_data_eng_HunainKha
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: "I am a recent graduate from York University's Computer Science program. I specalize in software development, from compiler-level code to machine learning. Although proficient, I continue to improve my skills in Docker, Java, SQL, Python, React.js, Git, Linux and more. As a full-stack software developer, I solve problems quickly, with optimized run time and extenisve documentation. A course on computer security, helped with enterpise-level solutions to computer security and security at the programming level. I am also an excellent communicator, team member and leader. Currently employed at Jarvis, I improve my skills through difficult projects and team collaboration in an agile environment."  
+summary: "I am a recent graduate from York University's Computer Science program. I specialize in software development, from compiler-level code to machine learning. Although proficient, I continue to improve my skills in Docker, Java, SQL, Python, React.js, Git, Linux and more. As a full-stack software developer, I solve problems quickly, with optimized run time and extensive documentation. A course on computer security helped with enterprise-level solutions to computer security and security at the programming level. I am also an excellent communicator, team member and leader. Currently employed at Jarvis, I improve my skills through difficult projects and team collaboration in an agile environment."  
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -67,8 +67,8 @@ professional_experience:
     company: "Jarvis Consultancy Group"
     duration: "2021-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Worked most recently on the Jarvis Linux/SQL project, all in an agile environment, closely monitored by senior developers for errors. Proper version control is done using git. Testing was also done extensively prior to code being pushed to github. Currently working on creating an app with linux grep features, in Java."
- 
+    description: "Worked most recently on the Jarvis Linux/SQL project, all in an agile environment, closely monitored by senior developers for errors. Proper version control is done using git. Manual testing was done prior to code being pushed to GitHub. Currently working on creating an app with Linux grep features, in Java."
+
 #List of edcuation
 education: 
   - school_name: "York University"
