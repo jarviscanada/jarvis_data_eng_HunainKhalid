@@ -1,0 +1,107 @@
+{
+  "education": [
+    {
+      "awards_achievements": null,
+      "degree": "Bachelor of Science",
+      "department": "Lassonde School of Electrical Engineering and Computer Science",
+      "duration": "2015-2021",
+      "school_name": "York University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid",
+  "highlighted_projects": [
+    {
+      "description": "Created a personal portfolio website. Used next.js and tailwind.js, to create a v1.0 version of my website. Deployed on vercel for hybrid static site generation, for improved loading times and saftey. Continous integration, improvements and version control was done from git and vercel. Visit hunain.dev for the portfolio website.",
+      "git_url": "",
+      "name": "Portfolio(Personal) Website"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Provisioned bash scripts and SQL code to Jarvis remote servers, monitoring efficiency of servers. Used by the Jarvis team to create reports, determining whether to add, keep or remove extra servers.",
+      "git_url": "/linux_sql",
+      "name": "Linux Cluster Resource Monitoring App"
+    },
+    {
+      "description": "WIP",
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "WIP",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "WIP",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "WIP",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "WIP",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "WIP",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Hunain Khalid",
+  "others": [
+    {
+      "bullets": [
+        "Kaggle.com: Python Course (2021)",
+        "CodeWithMosh.com: Mastering Docker (2021)",
+        "CodeWithMosh.com: Mastering React (2020)"
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Weightlifting/Jump Rope",
+        "Gaming"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis Consultancy Group",
+      "description": "Created six projects, all in an agile environment, closely monitored by senior developers for errors. Proper version control is done using git. Testing was also done extensively prior to code being pushed to github.",
+      "duration": "2021-present",
+      "title": "Software Developer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "Docker",
+      "ReactJS/GatsbyJS/NextJS",
+      "AngularJS",
+      "Python",
+      "Android"
+    ],
+    "familiar": [
+      "C programming language",
+      "Numpy",
+      "UX/UI design",
+      "Advanced Object Oriented Programming",
+      "Kotlin",
+      "Pandas"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git/Github"
+    ]
+  },
+  "summary": "Hello, I am Hunain Khalid a software developer with a passion for machine learning (ML) and artifical intelligence (AI). Currently employed by Jarvis Consultancy Group, I continuously improve in all areas of computer science. Writing code has been something I have been interested in since highschool creating an homage to a videogame for my final highschool project with 1000s of lines of code in Java. Thank you reading, may you find my skills pertinent to your work and I hope we can work together soon."
+}
