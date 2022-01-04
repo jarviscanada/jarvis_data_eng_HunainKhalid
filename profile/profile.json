@@ -1,0 +1,82 @@
+{
+  "education": [
+    {
+      "awards_achievements": null,
+      "degree": "Bachelor of Science",
+      "department": "Lassonde School of Electrical Engineering and Computer Science",
+      "duration": "2015-2021",
+      "school_name": "York University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid",
+  "highlighted_projects": [
+    {
+      "description": "Created a personal portfolio website. I used next.js and tailwind.js, to create a v1.0 version of my website. Deployed on Vercel for hybrid static site generation, for improved loading times and safety. Continuous integration, improvements and version control are done from Git and Vercel. Visit hunain.dev for the website.",
+      "git_url": "",
+      "name": "Portfolio(Personal) Website"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Provisioned using Docker and DockerHub with a Postgresql instance attached. Programmed using IntelliJ's client and bash script extension, testing is done manually. Scripts and SQL code are sent to Jarvis remote servers. Once scripts are added locally, insertion to remote database provisioned earlier takes place. Monitoring of data in real-time was done through DBeaver. This project was made for the Jarvis Cluster Team and determines the efficiency of servers. Information in the database is used by the Jarvis Cluster Team. to create reports. Determining whether to add, keep or remove extra servers.",
+      "git_url": "/linux_sql",
+      "name": "Linux Cluster Resource Monitoring App"
+    },
+    {
+      "description": "Revising Java notes and implementing a grep app from Linux using Java. Eventually using JDBC to add, delete, update and modify (CURD) arguments against a RDBMS database.",
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    }
+  ],
+  "name": "Hunain Khalid",
+  "others": [
+    {
+      "bullets": [
+        "Kaggle.com: Python Course (2021)",
+        "CodeWithMosh.com: Mastering Docker (2021)",
+        "CodeWithMosh.com: Mastering React (2020)"
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Weightlifting/Jump Rope",
+        "Gaming"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis Consultancy Group",
+      "description": "Worked most recently on the Jarvis Linux/SQL project, all in an agile environment, closely monitored by senior developers for errors. Proper version control is done using git. Manual testing was done before the code was pushed to GitHub. Currently working on creating an app with Linux grep features, in Java.",
+      "duration": "2021-present",
+      "title": "Software Developer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "Docker",
+      "ReactJS/GatsbyJS/NextJS",
+      "AngularJS",
+      "Python",
+      "Android"
+    ],
+    "familiar": [
+      "C programming language",
+      "Numpy",
+      "UX/UI design",
+      "Advanced Object Oriented Programming",
+      "Kotlin",
+      "Pandas"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git/Github"
+    ]
+  },
+  "summary": "I am a recent graduate from York University's Computer Science program. I specialize in software development, from compiler-level code to machine learning. Although proficient, I continue to improve my skills in Docker, Java, SQL, Python, React.js, Git, Linux and more. As a full-stack software developer, I solve problems quickly, with optimized run time and extensive documentation. A course on computer security helped with enterprise-level solutions to computer security and security at the programming level. I am also an excellent communicator, team member and leader. Currently employed at Jarvis, I improve my skills through difficult projects and team collaboration in an agile environment."
+}

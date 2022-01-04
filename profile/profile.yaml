@@ -1,0 +1,92 @@
+# Preferred name (Characters only)
+name: "Hunain Khalid"
+# Your GitHub repo root URL
+github_repo_root_url: "https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid"
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: "I am a recent graduate from York University's Computer Science program. I specialize in software development, from compiler-level code to machine learning. Although proficient, I continue to improve my skills in Docker, Java, SQL, Python, React.js, Git, Linux and more. As a full-stack software developer, I solve problems quickly, with optimized run time and extensive documentation. A course on computer security helped with enterprise-level solutions to computer security and security at the programming level. I am also an excellent communicator, team member and leader. Currently employed at Jarvis, I improve my skills through difficult projects and team collaboration in an agile environment."  
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - Linux/Bash
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git/Github
+  # At least 5 skills
+  competent:
+    - Docker
+    - ReactJS/GatsbyJS/NextJS
+    - AngularJS
+    - Python
+    - Android
+  # At least 5 skills
+  familiar:
+    - C programming language
+    - Numpy
+    - UX/UI design
+    - Advanced Object Oriented Programming
+    - Kotlin
+    - Pandas
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Linux Cluster Resource Monitoring App"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Provisioned using Docker and DockerHub with a Postgresql instance attached. Programmed using IntelliJ's client and bash script extension, testing is done manually. Scripts and SQL code are sent to Jarvis remote servers. Once scripts are added locally, insertion to remote database provisioned earlier takes place. Monitoring of data in real-time was done through DBeaver. This project was made for the Jarvis Cluster Team and determines the efficiency of servers. Information in the database is used by the Jarvis Cluster Team. to create reports. Determining whether to add, keep or remove extra servers. 
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description: Revising Java notes and implementing a grep app from Linux using Java. Eventually using JDBC to add, delete, update and modify (CURD) arguments against a RDBMS database.
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "Portfolio(Personal) Website"
+    #URL is optional
+    git_url: ""
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Created a personal portfolio website. I used next.js and tailwind.js, to create a 
+                 v1.0 version of my website. Deployed on Vercel for hybrid static site generation,
+                 for improved loading times and safety. Continuous integration, improvements and
+                 version control are done from Git and Vercel. Visit hunain.dev for the website. 
+  
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis Consultancy Group"
+    duration: "2021-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Worked most recently on the Jarvis Linux/SQL project, all in an agile environment, closely monitored by senior developers for errors. Proper version control is done using git. Manual testing was done before the code was pushed to GitHub. Currently working on creating an app with Linux grep features, in Java."
+
+#List of edcuation
+education: 
+  - school_name: "York University"
+    duration: "2015-2021"
+    degree: "Bachelor of Science"
+    department: "Lassonde School of Electrical Engineering and Computer Science"
+    awards_achievements:  
+
+#Optional section
+others:
+    #category
+  - title: "Certificates"
+    #list of items
+    bullets:
+      - "Kaggle.com: Python Course (2021)"
+      - "CodeWithMosh.com: Mastering Docker (2021)"
+      - "CodeWithMosh.com: Mastering React (2020)"
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Weightlifting/Jump Rope"
+      - "Gaming"
