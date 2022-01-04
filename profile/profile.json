@@ -11,7 +11,7 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid",
   "highlighted_projects": [
     {
-      "description": "Created a personal portfolio website. Used next.js and tailwind.js, to create a v1.0 version of my website. Deployed on vercel for hybrid static site generation, for improved loading times and saftey. Continous integration, improvements and version control was done from git and vercel. Visit hunain.dev for the portfolio website.",
+      "description": "Created a personal portfolio website.I used next.js and tailwind.js, to create a v1.0 version of my website. Deployed on Vercel for hybrid static site generation, for improved loading times and safety. Continuous integration, improvements and version control are done from Git and Vercel. Visit hunain.dev for the website.",
       "git_url": "",
       "name": "Portfolio(Personal) Website"
     }
@@ -23,7 +23,7 @@
       "name": "Linux Cluster Resource Monitoring App"
     },
     {
-      "description": "Revising Java notes and implementing a grep app from Linux using Java. Eventually using JDBC to add, delete, update  and modify (CURD) arguments against a RDBMS database.",
+      "description": "Revising Java notes and implementing a grep app from Linux using Java. Eventually using JDBC to add, delete, update and modify (CURD) arguments against a RDBMS database.",
       "git_url": "/core_java",
       "name": "Core Java Apps"
     }

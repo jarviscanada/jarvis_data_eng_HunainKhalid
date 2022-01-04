@@ -42,7 +42,7 @@ jarvis_projects:
     description: Provisioned using Docker and DockerHub with a Postgresql instance attached. Programmed using IntelliJ's client and bash script extension, testing is done manually. Scripts and SQL code are sent to Jarvis remote servers. Once scripts are added locally, insertion to remote database provisioned earlier takes place. Monitoring of data in real-time was done through DBeaver. This project was made for the Jarvis Cluster Team and determines the efficiency of servers. Information in the database is used by the Jarvis Cluster Team. to create reports. Determining whether to add, keep or remove extra servers. 
   - name: "Core Java Apps"
     git_url: "/core_java"
-    description: Revising Java notes and implementing a grep app from Linux using Java. Eventually using JDBC to add, delete, update  and modify (CURD) arguments against a RDBMS database.
+    description: Revising Java notes and implementing a grep app from Linux using Java. Eventually using JDBC to add, delete, update and modify (CURD) arguments against a RDBMS database.
 
 # List of personal or academic projects
 # Feel free to add more projects
@@ -52,10 +52,10 @@ highlighted_projects:
     #URL is optional
     git_url: ""
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Created a personal portfolio website. Used next.js and tailwind.js, to create a 
-                 v1.0 version of my website. Deployed on vercel for hybrid static site generation,
-                 for improved loading times and saftey. Continous integration, improvements and
-                 version control was done from git and vercel. Visit hunain.dev for the portfolio website. 
+    description: Created a personal portfolio website.I used next.js and tailwind.js, to create a 
+                 v1.0 version of my website. Deployed on Vercel for hybrid static site generation,
+                 for improved loading times and safety. Continuous integration, improvements and
+                 version control are done from Git and Vercel. Visit hunain.dev for the website. 
   
 
 #List of professional experience
