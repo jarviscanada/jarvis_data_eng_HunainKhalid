@@ -18,7 +18,7 @@
   ],
   "jarvis_projects": [
     {
-      "description": "Provisioned using Docker and DockerHub with a Postgresql instance attached. Programmed using IntelliJ's client and bash script extension, testing done manually. Scripts and SQL code are sent to Jarvis remote servers. Once scripts are added locally, insertion to remote database provisioned earlier takes place. Monitoring of data in real time was done through DBeaver. This project was made for the Jarvis Cluster Team and determines the efficiency of servers. Information in the database is used by the Jarvis Cluster Team to create reports, determining whether to add, keep or remove extra servers.",
+      "description": "Provisioned using Docker and DockerHub with a Postgresql instance attached. Programmed using IntelliJ's client and bash script extension, testing is done manually. Scripts and SQL code are sent to Jarvis remote servers. Once scripts are added locally, insertion to remote database provisioned earlier takes place. Monitoring of data in real-time was done through DBeaver. This project was made for the Jarvis Cluster Team and determines the efficiency of servers. Information in the database is used by the Jarvis Cluster Team. to create reports. Determining whether to add, keep or remove extra servers.",
       "git_url": "/linux_sql",
       "name": "Linux Cluster Resource Monitoring App"
     },
@@ -78,5 +78,5 @@
       "Git/Github"
     ]
   },
-  "summary": "I am a recent graduate from York University's Computer Science program. I specalizein software development, from compiler-level code to machine learning. Although proficient, I continue to improve my skills  in Docker, Java, SQL, Python, React.js, Git, Linux and more. As a full stack software developer, I solve problems quickly, with optimized run time, minimal space with extenisve documentation. A course on computer security, helped with enterpise level solutions to computer security and security at the programming level. I am also an excellent communicator, team member and leader. Currently employed at Jarvis, I improve my skills through difficult projects and team collaboration in an agile environment."
+  "summary": "I am a recent graduate from York University's Computer Science program. I specalize in software development, from compiler-level code to machine learning. Although proficient, I continue to improve my skills in Docker, Java, SQL, Python, React.js, Git, Linux and more. As a full-stack software developer, I solve problems quickly, with optimized run time and extenisve documentation. A course on computer security, helped with enterpise-level solutions to computer security and security at the programming level. I am also an excellent communicator, team member and leader. Currently employed at Jarvis, I improve my skills through difficult projects and team collaboration in an agile environment."
 }
