@@ -52,7 +52,7 @@ highlighted_projects:
     #URL is optional
     git_url: ""
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Created a personal portfolio website.I used next.js and tailwind.js, to create a 
+    description: Created a personal portfolio website. I used next.js and tailwind.js, to create a 
                  v1.0 version of my website. Deployed on Vercel for hybrid static site generation,
                  for improved loading times and safety. Continuous integration, improvements and
                  version control are done from Git and Vercel. Visit hunain.dev for the website. 
@@ -67,7 +67,7 @@ professional_experience:
     company: "Jarvis Consultancy Group"
     duration: "2021-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Worked most recently on the Jarvis Linux/SQL project, all in an agile environment, closely monitored by senior developers for errors. Proper version control is done using git. Manual testing was done prior to code being pushed to GitHub. Currently working on creating an app with Linux grep features, in Java."
+    description: "Worked most recently on the Jarvis Linux/SQL project, all in an agile environment, closely monitored by senior developers for errors. Proper version control is done using git. Manual testing was done before the code was pushed to GitHub. Currently working on creating an app with Linux grep features, in Java."
 
 #List of edcuation
 education: 
