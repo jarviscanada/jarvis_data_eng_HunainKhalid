@@ -3,7 +3,7 @@
     {
       "awards_achievements": null,
       "degree": "Bachelor of Science",
-      "department": "Lassonde School of Electrical Engineering and Computer Science",
+      "department": "Lassonde School of Computer Science and Electrical Engineering",
       "duration": "2015-2021",
       "school_name": "York University"
     }
@@ -11,19 +11,23 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid",
   "highlighted_projects": [
     {
-      "description": "Created a personal portfolio website. I used next.js and tailwind.js, to create a v1.0 version of my website. Deployed on Vercel for hybrid static site generation, for improved loading times and safety. Continuous integration, improvements and version control are done from Git and Vercel. Visit hunain.dev for the website.",
+      "description": "Created a personal portfolio (hunain.dev) using next.js and tailwind.js. Deployed on Vercel for hybrid static site generation, improved loading times and safety. Continuous integration, improvements and  version control are done from Git and Vercel.",
       "git_url": "",
       "name": "Portfolio(Personal) Website"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Provisioned using Docker and DockerHub with a Postgresql instance attached. Programmed using IntelliJ's client and bash script extension, testing is done manually. Scripts and SQL code are sent to Jarvis remote servers. Once scripts are added locally, insertion to remote database provisioned earlier takes place. Monitoring of data in real-time was done through DBeaver. This project was made for the Jarvis Cluster Team and determines the efficiency of servers. Information in the database is used by the Jarvis Cluster Team. to create reports. Determining whether to add, keep or remove extra servers.",
+      "description": "Developed a linux cluster monitoring agent for the Jarvis Cluster Team (JCT).The application sends reports of server usage to the JCT. Reports determine whether to add or remove servers. Implemented in CentOS7, using a Docker container with an attached PSQL instance and IntelliJ's bash script extension. Scripts and SQL code are sent to Jarvis remote servers. Once sent, monitoring of database insertions was done in real-time through database viewer, DBeaver. Testing was done manually. All code is deployed to the git url above.",
       "git_url": "/linux_sql",
       "name": "Linux Cluster Resource Monitoring App"
     },
     {
-      "description": "Revising Java notes and implementing a grep app from Linux using Java. Eventually using JDBC to add, delete, update and modify (CURD) arguments against a RDBMS database.",
+      "description": [
+        "Grep App: Developed a Java application simulating Linux (grep) functionality. A Linux command that allows searching of various text-patterns in files or files themselves. Implemented using Java libraries FileReader, Filewriter, BufferedReader,BufferedWriter and Lanbda expressions. Built with Maven in Intellij's platform. This project resides in a docker container, pushed to Docker Hub.",
+        "",
+        ""
+      ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
     }
@@ -40,8 +44,8 @@
     },
     {
       "bullets": [
-        "Weightlifting/Jump Rope",
-        "Gaming"
+        "Directed, Acted, Produced Short Films",
+        "Organized Video Gaming Events"
       ],
       "title": "Activities/Hobbies"
     }
@@ -49,7 +53,7 @@
   "professional_experience": [
     {
       "company": "Jarvis Consultancy Group",
-      "description": "Worked most recently on the Jarvis Linux/SQL project, all in an agile environment, closely monitored by senior developers for errors. Proper version control is done using git. Manual testing was done before the code was pushed to GitHub. Currently working on creating an app with Linux grep features, in Java.",
+      "description": "Worked as a software developer developing projects on Linux CentOS7 using SQL, RDBMS, Docker, Maven and Github, in an agile environment. Actively participated in daily scrum meetings, often collaborating and helping each other to find soluions. Code review sessions and sprint retro meetings with senior developers helped me understand the agile/scrum developmentcycle further.",
       "duration": "2021-present",
       "title": "Software Developer"
     }

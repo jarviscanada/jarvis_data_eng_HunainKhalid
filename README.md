@@ -15,27 +15,31 @@ I am a recent graduate from York University's Computer Science program. I specia
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid](https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid)
 
 
-**Linux Cluster Resource Monitoring App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid/tree/master/linux_sql)]: Provisioned using Docker and DockerHub with a Postgresql instance attached. Programmed using IntelliJ's client and bash script extension, testing is done manually. Scripts and SQL code are sent to Jarvis remote servers. Once scripts are added locally, insertion to remote database provisioned earlier takes place. Monitoring of data in real-time was done through DBeaver. This project was made for the Jarvis Cluster Team and determines the efficiency of servers. Information in the database is used by the Jarvis Cluster Team. to create reports. Determining whether to add, keep or remove extra servers.
+**Linux Cluster Resource Monitoring App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid/tree/master/linux_sql)]: Developed a linux cluster monitoring agent for the Jarvis Cluster Team (JCT).The application sends reports of server usage to the JCT. Reports determine whether to add or remove servers. Implemented in CentOS7, using a Docker container with an attached PSQL instance and IntelliJ's bash script extension. Scripts and SQL code are sent to Jarvis remote servers. Once sent, monitoring of database insertions was done in real-time through database viewer, DBeaver. Testing was done manually. All code is deployed to the git url above.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid/tree/master/core_java)]: Revising Java notes and implementing a grep app from Linux using Java. Eventually using JDBC to add, delete, update and modify (CURD) arguments against a RDBMS database.
+**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid/tree/master/core_java)]:
+      
+  - Grep App: Developed a Java application simulating Linux (grep) functionality. A Linux command that allows searching of various text-patterns in files or files themselves. Implemented using Java libraries FileReader, Filewriter, BufferedReader,BufferedWriter and Lanbda expressions. Built with Maven in Intellij's platform. This project resides in a docker container, pushed to Docker Hub.
+  - 
+  - 
 
 
 ## Highlighted Projects
-**Portfolio(Personal) Website**: Created a personal portfolio website. I used next.js and tailwind.js, to create a v1.0 version of my website. Deployed on Vercel for hybrid static site generation, for improved loading times and safety. Continuous integration, improvements and version control are done from Git and Vercel. Visit hunain.dev for the website.
+**Portfolio(Personal) Website**: Created a personal portfolio (hunain.dev) using next.js and tailwind.js. Deployed on Vercel for hybrid static site generation, improved loading times and safety. Continuous integration, improvements and  version control are done from Git and Vercel.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis Consultancy Group (2021-present)**: Worked most recently on the Jarvis Linux/SQL project, all in an agile environment, closely monitored by senior developers for errors. Proper version control is done using git. Manual testing was done before the code was pushed to GitHub. Currently working on creating an app with Linux grep features, in Java.
+**Software Developer, Jarvis Consultancy Group (2021-present)**: Worked as a software developer developing projects on Linux CentOS7 using SQL, RDBMS, Docker, Maven and Github, in an agile environment. Actively participated in daily scrum meetings, often collaborating and helping each other to find soluions. Code review sessions and sprint retro meetings with senior developers helped me understand the agile/scrum developmentcycle further.
 
 
 ## Education
-**York University (2015-2021)**, Bachelor of Science, Lassonde School of Electrical Engineering and Computer Science
+**York University (2015-2021)**, Bachelor of Science, Lassonde School of Computer Science and Electrical Engineering
 
 
 ## Miscellaneous
 - Kaggle.com: Python Course (2021)
 - CodeWithMosh.com: Mastering Docker (2021)
 - CodeWithMosh.com: Mastering React (2020)
-- Weightlifting/Jump Rope
-- Gaming
+- Directed, Acted, Produced Short Films
+- Organized Video Gaming Events
