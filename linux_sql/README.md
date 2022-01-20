@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Introduction
 This app is designed for the Jarvis Linux Cluster Administration (LCA) team managing a Linux cluster of servers running the GNU/Linux distribution CentOS 7. These servers are connected through a switch and communicate through internal IPv4 addresses to monitor usage statistics. Created agents collect usage statistics of each individual computer every minute. After, agents insert values to a local PostgreSQL database. This program is made so the Jarvis (LCA) team can produce reports, to determine addition or removal of future servers.
 - **Development Method**: Agile _(Scrum)_
@@ -170,3 +171,5 @@ This app is deployed to this very GitHub repository. A Docker image with PSQL wa
 - More time implementing fail fast, fail safe methodology for all code.
 - SQL query testing can be done more extensively.
 - Better version tracking by pushing to GitHub on feature branches, early in development rather than later.
+=======
+>>>>>>> master
