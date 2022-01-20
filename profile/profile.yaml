@@ -45,7 +45,7 @@ jarvis_projects:
     description: 
         - "Grep App: Developed a Java application simulating Linux (grep) functionality. A Linux command that allows searching of various text-patterns in files or files themselves. Implemented using Java libraries FileReader, Filewriter, BufferedReader,BufferedWriter and Lanbda expressions. Built with Maven in Intellij's platform. This project resides in a docker container, pushed to Docker Hub."
         - ""
-        - ""
+        - ""        
 
 # List of personal or academic projects
 # Feel free to add more projects
