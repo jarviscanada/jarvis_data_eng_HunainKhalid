@@ -1,3 +1,9 @@
+/* Name: Hunain Khalid
+ * Date: Feb, 4th, 2022
+ * Purpose: Simulate "grep" command in java
+ * Filename: javaGrepImp.java
+ */
+
 package ca.jrvs.apps.grep;
 
 import com.sun.org.slf4j.internal.Logger;
@@ -6,6 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+// Main method to take 3 arguments, processed via helper methods
 public class JavaGrepImp implements JavaGrep
 {
     final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
