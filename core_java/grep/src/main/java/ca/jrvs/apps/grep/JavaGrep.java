@@ -4,60 +4,57 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public interface JavaGrep
-{
-    /**
-     * Top level search code
-     * @throws IOException
-     */
-    void process() throws IOException;
+public interface JavaGrep {
 
-    /**
-     * Traverse a given directory and return
-     * all files
-     *
-     * @param rootDir : input directory
-     * @return files under the rootDir
-     */
-    List<File> listFiles(String rootDir);
+  /**
+   * Top level search code
+   *
+   * @throws IOException
+   */
+  void process() throws IOException;
 
-    /**
-     * Read a file and return all lines
-     *
-     * @param inputfile : file to be read
-     * @return lines
-     * @throws  IllegalArgumentException if the
-     *          given inputFile is not a file.
-     */
-    List<String> readLines(File inputfile);
+  /**
+   * Traverse a given directory and return all files
+   *
+   * @param rootDir : input directory
+   * @return files under the rootDir
+   */
+  List<File> listFiles(String rootDir);
 
-    /**
-     * Check if a line contains the regex
-     * pattern passed by the user
-     *
-     * @param line: input string
-     * @return true if there is a match, false
-     *          otherwise
-     */
-    boolean containsPattern(String line);
+  /**
+   * Read a file and return all lines
+   *
+   * @param inputfile : file to be read
+   * @return lines
+   * @throws IllegalArgumentException if the given inputFile is not a file.
+   */
+  List<String> readLines(File inputfile);
 
-    /**
-     * Write lines to file
-     *
-     * @param lines : matched line
-     * @throws IOException if write fails
-     */
-    void writetoFile(List<String> lines) throws IOException;
+  /**
+   * Check if a line contains the regex pattern passed by the user
+   *
+   * @param line: input string
+   * @return true if there is a match, false otherwise
+   */
+  boolean containsPattern(String line);
 
-    String getRootPath();
+  /**
+   * Write lines to file
+   *
+   * @param lines : matched line
+   * @throws IOException if write fails
+   */
+  void writetoFile(List<String> lines) throws IOException;
 
-    void setRootPath(String rootPath);
+  String getRootPath();
 
-    String getRegex();
+  void setRootPath(String rootPath);
 
-    void setRegex(String regex);
+  String getRegex();
 
-    String getOutFile();
+  void setRegex(String regex);
 
-    void setOutFile(String outfile);
+  String getOutFile();
+
+  void setOutFile(String outfile);
 }
