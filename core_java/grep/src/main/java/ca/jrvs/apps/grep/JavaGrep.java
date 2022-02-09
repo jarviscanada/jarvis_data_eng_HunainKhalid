@@ -1,6 +1,7 @@
 package ca.jrvs.apps.grep;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
@@ -19,7 +20,7 @@ public interface JavaGrep {
    * @param rootDir : input directory
    * @return files under the rootDir
    */
-  List<File> listFiles(String rootDir);
+  List<File> listFiles(String rootDir) throws FileNotFoundException;
 
   /**
    * Read a file and return all lines
