@@ -5,15 +5,22 @@
  */
 package ca.jrvs.apps.grep;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+import org.apache.log4j.BasicConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class JavaGrepImp implements JavaGrep {
 
@@ -25,10 +32,12 @@ public class JavaGrepImp implements JavaGrep {
   // Main method to take 3 arguments, processed via helper methods
   public static void main(String[] args) {
     // Fail-Fast, Fail safe
-    if (args.length != 3) {
+    if (args.length != 3)
+    {
       throw new IllegalArgumentException("USAGE: JavaGrep [regex] [rootPath] [outFile]");
     }
 
+    BasicConfigurator.configure();
     // Create new instance of class "" and pass cmd line args
     JavaGrepImp javaGrepImp = new JavaGrepImp();
     javaGrepImp.setRegex(args[0]);
@@ -43,7 +52,8 @@ public class JavaGrepImp implements JavaGrep {
     }
   }
 
-  // Create new list to store matched lines, fail
+  /* Create new list to store matched lines, if failed
+      */
 
   @Override
   public void process() throws IOException
@@ -62,28 +72,34 @@ public class JavaGrepImp implements JavaGrep {
     writetoFile(linesMatched);
   }
   catch (IOException e) {
-    logger.error("Error: Unable to list files: ", e);
+    logger.error("Error: Unable to process files: ", e);
+    throw new IOException("Unable to handle processing of files");
   }
 }
 
   // Used built in Java 8 API to recursively list
   // files, namely Files.walk().
   @Override
-  public List<File> listFiles(String rootDir) throws FileNotFoundException {
+  public List<File> listFiles(String rootDir) throws FileNotFoundException
+  {
     List<File> fileList = new ArrayList<File>();
 
         /* Find files in the root directory, and add
         to fileList. only if directories have files.
         Else, log error "e" and throw new FileNotFoundException.
         */
-    try {
+    try
+    {
       Files.walk(Paths.get(rootDir)).forEach(dir ->
       {
-        if (dir.toFile().isFile()) {
+        if (dir.toFile().isFile())
+        {
           fileList.add(dir.toFile());
         }
       });
-    } catch (IOException e) {
+    }
+    catch (IOException e)
+    {
       logger.error("Error: ", e);
       throw new FileNotFoundException("File Was Not Found");
     }
@@ -93,19 +109,48 @@ public class JavaGrepImp implements JavaGrep {
   @Override
   public void writetoFile(List<String> lines) throws IOException
   {
-
+    BufferedWriter streamOut = new BufferedWriter(new FileWriter(this.getOutFile()));
+    for (String line : lines)
+    {
+      streamOut.write(line);
+      streamOut.newLine();
+    }
+    streamOut.close();
+    logger.debug("File written successfully");
   }
 
   @Override
-  public List<String> readLines(File inputfile) {
-    return null;
+  public List<String> readLines(File inputfile)
+  {
+    List<String> lineOfFile = new ArrayList<String>();
+
+    try
+    {
+      BufferedReader br = new BufferedReader(new FileReader(inputfile));
+      String nextLine;
+
+      while ((nextLine = br.readLine()) != null)
+      {
+        lineOfFile.add(nextLine);
+      }
+      br.close();
+    }
+    catch (IOException e)
+    {
+      logger.error("Error, failed in reading of lines", e);
+    }
+
+    return lineOfFile;
   }
 
   @Override
-  public boolean containsPattern(String line) {
-    return false;
-  }
+  public boolean containsPattern(String line)
+  {
+    Pattern regex = Pattern.compile(getRegex());
+    Matcher match = regex.matcher(line);
 
+    return match.find();
+  }
 
   /* Below are all getters/setters of private vars "regex",
   "rootpath", "outfile" */
