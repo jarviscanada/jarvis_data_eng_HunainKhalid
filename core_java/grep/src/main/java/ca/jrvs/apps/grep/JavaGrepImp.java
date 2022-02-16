@@ -29,6 +29,14 @@ public class JavaGrepImp implements JavaGrep {
   private String rootPath;
   private String outFile;
 
+  public JavaGrepImp() {}
+  public JavaGrepImp(String regex, String rootPath, String outFile)
+  {
+    setRegex(regex);
+    setOutFile(outFile);
+    setRootPath(rootPath);
+  }
+
   // Main method to take 3 arguments, processed via helper methods
   public static void main(String[] args) {
     // Fail-Fast, Fail safe
@@ -180,7 +188,7 @@ public class JavaGrepImp implements JavaGrep {
   }
 
   @Override
-  public void setOutFile(String outfile) {
-    this.outFile = outfile;
+  public void setOutFile(String outFile) {
+    this.outFile = outFile;
   }
 }
