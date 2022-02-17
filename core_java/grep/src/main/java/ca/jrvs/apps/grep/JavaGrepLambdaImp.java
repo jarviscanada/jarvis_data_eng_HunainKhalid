@@ -43,7 +43,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp
   }
 
   @Override
-  public List<String> readLines(File input) throws IllegalArgumentException
+  public List<String> readLines(File input)
   {
     List<String> res;
     try (Stream<String> lines = Files.lines(Paths.get(String.valueOf(input))))
@@ -66,6 +66,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp
         try
         {
           Files.walk(Paths.get(root))
+              .filter(Files::isRegularFile)
               .forEach(i -> {
                   fileList.add(new File(i.toString()));
               });
