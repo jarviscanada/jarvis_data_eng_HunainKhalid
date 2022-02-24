@@ -39,7 +39,7 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description:  Developed a Linux cluster monitoring agent to monitor and analyze server hardware usages in real-time using Bash scripts, PostgreSQL, and Docker. Crontab was added and collected system information per minute using Bash scripts. Used DBeaver to monitor database insertions in real-time. Version control is done through Git and Github. SQL queries report average server usage via gathered data from Bash scripts for data analytic purposes.
+    description:  Developed a Linux cluster monitoring agent to monitor and analyze server hardware usage in real-time using Bash scripts, PostgreSQL, and Docker. Crontab was added and collected system information per minute using Bash scripts. Used DBeaver to monitor database insertions in real-time. Version control is done through Git and Github. SQL queries report average server usage via gathered data from Bash scripts for data analytic purposes.
   - name: "Core Java Apps"
     git_url: "/core_java"
     description: 

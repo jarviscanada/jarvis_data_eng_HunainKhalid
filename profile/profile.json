@@ -18,7 +18,7 @@
   ],
   "jarvis_projects": [
     {
-      "description": "Developed a Linux cluster monitoring agent to monitor and analyze server hardware usages in real-time using Bash scripts, PostgreSQL, and Docker. Crontab was added and collected system information per minute using Bash scripts. Used DBeaver to monitor database insertions in real-time. Version control is done through Git and Github. SQL queries report average server usage via gathered data from Bash scripts for data analytic purposes.",
+      "description": "Developed a Linux cluster monitoring agent to monitor and analyze server hardware usage in real-time using Bash scripts, PostgreSQL, and Docker. Crontab was added and collected system information per minute using Bash scripts. Used DBeaver to monitor database insertions in real-time. Version control is done through Git and Github. SQL queries report average server usage via gathered data from Bash scripts for data analytic purposes.",
       "git_url": "/linux_sql",
       "name": "Linux Cluster Resource Monitoring App"
     },
