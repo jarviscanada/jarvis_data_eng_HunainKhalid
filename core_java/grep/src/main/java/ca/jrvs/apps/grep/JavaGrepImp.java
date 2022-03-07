@@ -46,7 +46,7 @@ public class JavaGrepImp implements JavaGrep {
     }
 
     BasicConfigurator.configure();
-    // Create new instance of class "" and pass cmd line args
+    // Create new instance of class JavaGrepImp and pass cmd line args
     JavaGrepImp javaGrepImp = new JavaGrepImp();
     javaGrepImp.setRegex(args[0]);
     javaGrepImp.setRootPath(args[1]);
@@ -60,13 +60,12 @@ public class JavaGrepImp implements JavaGrep {
     }
   }
 
-  /* Create new list to store matched lines, if failed
-      */
+  /* Attempt and create a new list to store matched lines, if failed
+     then throw an IOException, stating processing of files failed. */
 
   @Override
   public void process() throws IOException
   {
-
     try
     {
       List<String> linesMatched = new ArrayList<String>();
@@ -85,17 +84,15 @@ public class JavaGrepImp implements JavaGrep {
   }
 }
 
-  // Used built in Java 8 API to recursively list
-  // files, namely Files.walk().
+  /*
+     Find files in the root directory, and add
+     to fileList. only if directories have files.
+     Else, log error "e" and throw new FileNotFoundException.
+     */
   @Override
   public List<File> listFiles(String rootDir) throws FileNotFoundException
   {
     List<File> fileList = new ArrayList<File>();
-
-        /* Find files in the root directory, and add
-        to fileList. only if directories have files.
-        Else, log error "e" and throw new FileNotFoundException.
-        */
     try
     {
       Files.walk(Paths.get(rootDir)).forEach(dir ->
@@ -114,19 +111,36 @@ public class JavaGrepImp implements JavaGrep {
     return fileList;
   }
 
+  /*
+     Read each line from input then write each line to file
+     of choice. If failed throw an IOException, and log
+     there was an error writing to file.
+  */
   @Override
   public void writetoFile(List<String> lines) throws IOException
   {
     BufferedWriter streamOut = new BufferedWriter(new FileWriter(this.getOutFile()));
-    for (String line : lines)
+    try
     {
-      streamOut.write(line);
-      streamOut.newLine();
+      for (String line : lines)
+      {
+        streamOut.write(line);
+        streamOut.newLine();
+      }
+      logger.debug("File written successfully");
+      streamOut.close();
     }
-    streamOut.close();
-    logger.debug("File written successfully");
+    catch (IOException e)
+    {
+      logger.error("Error writing to file", e);
+    }
   }
 
+  /*
+     Read each line from input then write each line to file
+     of choice. If failed throw an IOException, and log
+     there was an error writing to file.
+  */
   @Override
   public List<String> readLines(File inputfile)
   {
@@ -151,6 +165,10 @@ public class JavaGrepImp implements JavaGrep {
     return lineOfFile;
   }
 
+   /*
+   Method used to determine if there is a matching pattern,
+   returns match.find() returns true or false as a result.
+   */
   @Override
   public boolean containsPattern(String line)
   {
