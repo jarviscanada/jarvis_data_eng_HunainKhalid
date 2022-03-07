@@ -1,6 +1,6 @@
 # Introduction
-This app is intended to mimic the `egrep` command from linux allowing users to search for matching, in Java. 
-This app was built to help develop Java skills and future JAva apps such as the stock trading app.
+This app is intended to simulate the `egrep` command from linux allowing users to search for matching, in Java. 
+This app was built to help develop Java skills and future Java apps such as the stock trading app.
 - **Development Method**: Agile _(Scrum)_
 - **Technologies Used**:
   _Docker, Docker Hub, PostGreSQL, Git, 
