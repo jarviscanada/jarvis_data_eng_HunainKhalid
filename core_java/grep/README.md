@@ -1,4 +1,6 @@
 # Introduction
+This app is intended to mimic the `egrep` command from linux allowing users to search for matching, in Java. 
+This app was built to help develop Java skills and future JAva apps such as the stock trading app.
 - **Development Method**: Agile _(Scrum)_
 - **Technologies Used**:
   _Docker, Docker Hub, PostGreSQL, Git, 
@@ -7,10 +9,15 @@ Github, IntelliJ IDE, VNC, GCP, Java 8_
 # Quick Start
 1. Run using JAR file
 ```java, bash
+mvn install
 mvn clean package
-java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp [regex] [rootDirectory] [outFile]
+java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp [searchRegex] [rootDirectory] [outputFile]
 ```
 2. Alternatively use a Docker Image
+```java, bash, Docker, docker
+   docker pull hunaink/grep
+   docker run --rm -v `pwd`/data:/data -v `pwd`/log:/log hunaink/grep [searchRegex] [rootDirectory] [outputFile]
+```
 
 # Implementation
 ## Pseudocode
