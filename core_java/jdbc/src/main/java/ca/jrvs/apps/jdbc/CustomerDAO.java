@@ -7,8 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-public class CustomerDAO extends DataAccessObject<Customer>
-{
+public class CustomerDAO extends DataAccessObject<Customer> {
 
   private static final String INSERT = "INSERT INTO customer (first_name, last_name," +
       "email, phone, address, city, state, zipcode) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
@@ -29,12 +28,10 @@ public class CustomerDAO extends DataAccessObject<Customer>
   public Customer findById(long id) {
     Customer cust = new Customer();
 
-    try (PreparedStatement stmt = this.connection.prepareStatement(GET_ONE);)
-    {
+    try (PreparedStatement stmt = this.connection.prepareStatement(GET_ONE);) {
       stmt.setLong(1, id);
       ResultSet rs = stmt.executeQuery();
-      while (rs.next())
-      {
+      while (rs.next()) {
         cust.setId(rs.getLong("customer_id"));
         cust.setFirstName(rs.getString("first_name"));
         cust.setLastName(rs.getString("last_name"));
@@ -44,9 +41,7 @@ public class CustomerDAO extends DataAccessObject<Customer>
         cust.setCity(rs.getString("city"));
         cust.setState(rs.getString("state"));
       }
-    }
-    catch (SQLException e)
-    {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
@@ -62,8 +57,7 @@ public class CustomerDAO extends DataAccessObject<Customer>
   public Customer update(Customer dto) {
     Customer cust = null;
 
-    try (PreparedStatement stmt = this.connection.prepareStatement(UPDATE);)
-    {
+    try (PreparedStatement stmt = this.connection.prepareStatement(UPDATE);) {
       stmt.setString(1, dto.getFirstName());
       stmt.setString(2, dto.getLastName());
       stmt.setString(3, dto.getEmail());
@@ -76,9 +70,7 @@ public class CustomerDAO extends DataAccessObject<Customer>
       stmt.execute();
 
       cust = this.findById(dto.getId());
-    }
-    catch (SQLException e)
-    {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
@@ -87,8 +79,7 @@ public class CustomerDAO extends DataAccessObject<Customer>
 
   @Override
   public Customer create(Customer dto) {
-    try (PreparedStatement stmt = this.connection.prepareStatement(INSERT);)
-    {
+    try (PreparedStatement stmt = this.connection.prepareStatement(INSERT);) {
       stmt.setString(1, dto.getFirstName());
       stmt.setString(2, dto.getLastName());
       stmt.setString(3, dto.getEmail());
@@ -101,24 +92,18 @@ public class CustomerDAO extends DataAccessObject<Customer>
 
       int id = this.getLastVal(CUSTOMER_SEQUENCE);
       return this.findById(id);
-    }
-    catch (SQLException e)
-    {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
   }
 
   @Override
-  public void delete(long id)
-  {
-    try(PreparedStatement stmt = this.connection.prepareStatement(DELETE);)
-    {
+  public void delete(long id) {
+    try (PreparedStatement stmt = this.connection.prepareStatement(DELETE);) {
       stmt.setLong(1, id);
       stmt.execute();
-    }
-    catch (SQLException e)
-    {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }

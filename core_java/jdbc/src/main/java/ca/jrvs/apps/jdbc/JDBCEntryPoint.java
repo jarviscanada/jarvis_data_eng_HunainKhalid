@@ -3,15 +3,13 @@ package ca.jrvs.apps.jdbc;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class JDBCEntryPoint
-{
-  public static void main(String[] args)
-  {
+public class JDBCEntryPoint {
+
+  public static void main(String[] args) {
     DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
         "hplussport", "postgres", "password");
 
-    try
-    {
+    try {
       Connection con = dcm.getConnection();
       CustomerDAO cDAO = new CustomerDAO(con);
       Customer cust = new Customer();
@@ -33,9 +31,7 @@ public class JDBCEntryPoint
       dbCust = cDAO.update(dbCust);
       System.out.println(dbCust);
       cDAO.delete(dbCust.getId());
-    }
-    catch (SQLException e)
-    {
+    } catch (SQLException e) {
       e.printStackTrace();
     }
   }
