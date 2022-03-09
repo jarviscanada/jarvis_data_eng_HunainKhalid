@@ -20,7 +20,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HunainKhal
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid/tree/master/core_java)]:
       
   - Grep App: Developed a Java application simulating Linux (grep) functionality. A Linux command that allows searching of various text-patterns in files or files themselves. Implemented using Java libraries FileReader, Filewriter, BufferedReader,BufferedWriter and Lanbda expressions. Built with Maven in Intellij's platform. This project resides in a docker container, pushed to Docker Hub.
-  - 
+  - JDBC App: This application uses JDBC (Java Database Connectivity) to perform CRUD (Create, Read, Update, Delete) operations against a PostgresSQL RDBMS, using common DB patterns including DTO and DAO. This application was tested using the PSQL JDBC Driver and successfully connects to the dockerized PSQL database. 
   - 
 
 
