@@ -12,26 +12,22 @@ import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class JavaGrepLambdaImp extends JavaGrepImp
-{
+public class JavaGrepLambdaImp extends JavaGrepImp {
+
   final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
 
-  public JavaGrepLambdaImp(String regex, String rootPath, String outFile)
-  {
+  public JavaGrepLambdaImp(String regex, String rootPath, String outFile) {
     super(regex, rootPath, outFile);
   }
 
-  public static void main(String[] args)
-  {
-    if (args.length != 3)
-    {
+  public static void main(String[] args) {
+    if (args.length != 3) {
       throw new IllegalArgumentException("USAGE: JavaGrep [regex] [rootPath] [outFile]");
     }
 
     BasicConfigurator.configure();
     // Create new instance of class "JavaGrepImp" and pass cmd line args
-    JavaGrepImp javaGrepLambdaImp = new JavaGrepLambdaImp(args[0],args[1],args[2]);
-
+    JavaGrepImp javaGrepLambdaImp = new JavaGrepLambdaImp(args[0], args[1], args[2]);
 
     // Attempt processing of data, handle any errors
     try {
@@ -42,47 +38,40 @@ public class JavaGrepLambdaImp extends JavaGrepImp
     }
   }
 
-     /*
-     Use lambda and stream for reading of lines, efficient
-     for larger files.
-     */
+  /*
+  Use lambda and stream for reading of lines, efficient
+  for larger files.
+  */
   @Override
-  public List<String> readLines(File input)
-  {
+  public List<String> readLines(File input) {
     List<String> res;
-    try (Stream<String> lines = Files.lines(Paths.get(String.valueOf(input))))
-    {
+    try (Stream<String> lines = Files.lines(Paths.get(String.valueOf(input)))) {
       res = lines.collect(Collectors.toList());
-    }
-    catch (Exception e)
-    {
+    } catch (Exception e) {
       res = null;
       logger.error("Error reading lines: ", e);
     }
     return res;
   }
-      /*
-      Use lambda and stream for listing files, efficient
-      for larger directories.
-      */
-  @Override
-  public List<File> listFiles(String root)
-  {
-        List<File> fileList = new ArrayList<File>();
 
-        try
-        {
-          Files.walk(Paths.get(root))
-              .filter(Files::isRegularFile)
-              .forEach(i -> {
-                  fileList.add(new File(i.toString()));
-              });
-        }
-        catch (IOException e)
-        {
-          logger.error("Error listing files: ", e);
-        }
-          return fileList;
+  /*
+  Use lambda and stream for listing files, efficient
+  for larger directories.
+  */
+  @Override
+  public List<File> listFiles(String root) {
+    List<File> fileList = new ArrayList<File>();
+
+    try {
+      Files.walk(Paths.get(root))
+          .filter(Files::isRegularFile)
+          .forEach(i -> {
+            fileList.add(new File(i.toString()));
+          });
+    } catch (IOException e) {
+      logger.error("Error listing files: ", e);
+    }
+    return fileList;
   }
 }
 
