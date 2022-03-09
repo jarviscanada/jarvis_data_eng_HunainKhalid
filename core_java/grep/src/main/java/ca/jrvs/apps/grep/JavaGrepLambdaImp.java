@@ -29,7 +29,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp
     }
 
     BasicConfigurator.configure();
-    // Create new instance of class "" and pass cmd line args
+    // Create new instance of class "JavaGrepImp" and pass cmd line args
     JavaGrepImp javaGrepLambdaImp = new JavaGrepLambdaImp(args[0],args[1],args[2]);
 
 
@@ -42,6 +42,10 @@ public class JavaGrepLambdaImp extends JavaGrepImp
     }
   }
 
+     /*
+     Use lambda and stream for reading of lines, efficient
+     for larger files.
+     */
   @Override
   public List<String> readLines(File input)
   {
@@ -57,7 +61,10 @@ public class JavaGrepLambdaImp extends JavaGrepImp
     }
     return res;
   }
-
+      /*
+      Use lambda and stream for listing files, efficient
+      for larger directories.
+      */
   @Override
   public List<File> listFiles(String root)
   {
