@@ -1,7 +1,13 @@
 package ca.jrvs.practice.codingChallenge;
 
 import java.util.Stack;
+/* AMORTIZED SOLUTION
 
+*  push(), pop(), empty() = O(1)
+*  peek() = Amortized O(1), O(n) when
+            shifting values from stack1 to stack2
+            whenever stack1 is full.
+* */
 public class MyQueue
 {
   private Stack<Integer> stack1;
