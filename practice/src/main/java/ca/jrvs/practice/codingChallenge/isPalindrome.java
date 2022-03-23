@@ -8,13 +8,23 @@ public class isPalindrome
        unnecessary time converting the string
        from any case characters to lowercase
        ones adding another unneeded O(n) pass
-
+       v1.1 added a null case for quicker
+       code error detection
       s = s.toLowerCase();
     */
 
-
     // ptr1, ptr2 are left and right pointer
     // respectively.
+
+    /* This code below adds correctness but causes
+       4ms gain to program using online judge.
+
+    if (s == null)
+    {
+      throw new IllegalArgumentException("null input");
+    }
+    */
+
     int ptr1 = 0, ptr2 = s.length() - 1;
 
     while (ptr1 < ptr2)
