@@ -45,7 +45,4 @@ public class isPalindrome
     }
     return true;
   }
-
-
-
 }

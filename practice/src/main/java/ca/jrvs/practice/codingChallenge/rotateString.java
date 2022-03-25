@@ -16,7 +16,7 @@ public class rotateString
 
       Adding goal onto itself, yields xyzxyz, going through the
       list searching for s, which has all permutations
-      and s goes through "goalgoal
+      and s goes through "goalgoal"
      */
 
    return s.length() == goal.length() && (goal + goal).contains(s);

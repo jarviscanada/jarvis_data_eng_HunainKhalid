@@ -3,9 +3,9 @@ package ca.jrvs.practice.codingChallenge;
 public class removeNodeEndOfLiist
 {
   /* Good first attempt will need to
-  *  revise the code and do dry runs
-  * for understanding purposes.
-  * */
+   *  revise the code and do dry runs
+   * for understanding purposes.
+   * */
   public ListNode removeNthFromEnd(ListNode head, int n)
   {
     ListNode temp = new ListNode(0);
