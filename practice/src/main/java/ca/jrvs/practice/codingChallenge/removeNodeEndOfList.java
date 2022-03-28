@@ -25,9 +25,15 @@ package ca.jrvs.practice.codingChallenge;
 
       node1.next = node1.next.next;
       return temp.next;
-
-
     }
 
+    static class ListNode {
+      int val;
+      ListNode next;
+      ListNode(int x) {
+          val = x;
+          next = null;
+      }
+    }
   }
 
