@@ -1,14 +1,12 @@
 package ca.jrvs.practice.codingChallenge;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 import java.util.NoSuchElementException;
 
 public class minmaxArray
 {
-  // most basic way
+  // using normal for-loop, O(n) runtime
+  //              , O(1) space
   public static void min0(int[] arr)
   {
     int min = Integer.MAX_VALUE;
@@ -24,7 +22,8 @@ public class minmaxArray
     System.out.println(min);
   }
 
-  // using streams
+  // using streams, O(n) runtime
+  //              , O(1) space
   public static void min1(int[] arr)
   {
     int min = Arrays
@@ -35,7 +34,8 @@ public class minmaxArray
     System.out.println(min);
   }
 
-  // using collections
+  // using collections, runtime O(n),
+  //                  , space O(1)
   public static void min2(int[] arr)
   {
     Arrays.sort(arr);
