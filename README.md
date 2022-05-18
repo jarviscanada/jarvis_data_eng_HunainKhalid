@@ -18,9 +18,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HunainKhal
 **Linux Cluster Resource Monitoring App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid/tree/master/linux_sql)]: Developed a Linux cluster monitoring agent to monitor and analyze server hardware usage in real-time using Bash scripts, PostgreSQL, and Docker. Crontab was added and collected system information per minute using Bash scripts. Used DBeaver to monitor database insertions in real-time. Version control is done through Git and Github. SQL queries report average server usage via gathered data from Bash scripts for data analytic purposes.
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HunainKhalid/tree/master/core_java)]:
-      
-  - Grep App: Developed a Java application simulating Linux (grep) allowing users to search for various text-patterns using regex. Implemented using Java libraries FileReader, FileWriter, BufferedReader, BufferedWriter, Stream and Lambda expressions. Built with Maven in Intellij's IDE. This project resides in a docker container, pushed to Docker Hub.
-  - 
+     
   - 
 
 
