@@ -8,4 +8,8 @@ target/
 .idea/
 .eclipse
 /.idea
-*.xml
+intellij-java-google-style.xml
+/target/
+.git
+core_java/grep/src/main/java/ca/jrvs/apps/practice
+*.swp
